@@ -16,7 +16,7 @@ deploy:
 - provider: NuGet
   server: https://www.myget.org/F/domaindrivendev/api/v2
   on:
-    branch: master
+    branch: honor-all-required-attributes
     appveyor_repo_tag: false
   api_key:
     secure: 9QrW8KWCDr8G2ufmOX4O7U4yjneFOYY+5h+auICuWYb1YPaKpQBtUVqrRExg8VXR
