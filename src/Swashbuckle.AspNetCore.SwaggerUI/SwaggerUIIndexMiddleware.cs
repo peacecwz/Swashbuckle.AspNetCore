@@ -81,7 +81,8 @@ namespace Swashbuckle.AspNetCore.SwaggerUI
                 { "%(DocumentTitle)", _options.DocumentTitle },
                 { "%(HeadContent)", _options.HeadContent },
                 { "%(ConfigObject)", SerializeToJson(_options.ConfigObject) },
-                { "%(OAuthConfigObject)", SerializeToJson(_options.OAuthConfigObject) }
+                { "%(OAuthConfigObject)", SerializeToJson(_options.OAuthConfigObject) },
+                { "%(BodyContent)", _options.BodyContent }
             };
         }
 

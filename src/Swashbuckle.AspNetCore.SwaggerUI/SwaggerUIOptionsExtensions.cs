@@ -29,7 +29,7 @@ namespace Microsoft.AspNetCore.Builder
         /// <param name="type">The script type - i.e. the script "type" attribute</param>
         public static void InjectJavascript(this SwaggerUIOptions options, string path, string type = "text/javascript")
         {
-            var builder = new StringBuilder(options.HeadContent);
+            var builder = new StringBuilder(options.BodyContent);
             builder.AppendLine($"<script src='{path}' type='{type}'></script>");
             options.HeadContent = builder.ToString();
         }

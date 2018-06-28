@@ -29,6 +29,12 @@ namespace Swashbuckle.AspNetCore.SwaggerUI
         public string HeadContent { get; set; } = "";
 
         /// <summary>
+        /// Gets or sets additional content to place in the body of the swagger-ui page. 
+        /// </summary>
+        public string BodyContent { get; set; } = "";
+
+
+        /// <summary>
         /// Gets the JavaScript config object, represented as JSON, that will be passed to the SwaggerUI
         /// </summary>
         public JObject ConfigObject { get; } = JObject.FromObject(new
